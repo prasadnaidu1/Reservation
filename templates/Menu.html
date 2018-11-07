@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    body{
+        background: greenyellow;
+    }
+</style>
+{% load staticfiles %}
+<marquee direction="right" style="background: green"><h1>Bus Reservation</h1></marquee>
+<h1 align="center">
+<img src="{% static '11.jpg' %}" width="200" height="200"></h1>
+
+    <table align="center" border="0">
+        <tr>
+                <form action="/register/" method="post">
+    {% csrf_token %}
+
+            <td>
+                 <input type="submit" value="New Register">
+
+            </td>
+                </form>
+            <form action="/login/" method="post">
+    {% csrf_token %}
+            <td>
+                <input type="submit" value="Already Exists">
+            </td>
+                   </form>
+        </tr>
+    </table>
+
+</body>
+</html>

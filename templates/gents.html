@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include "Menu.html" %}
+<h1 align="center">
+<form action="/pay/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Book Your Ticket">
+        </form>
+    </h1>
+</body>
+</html>

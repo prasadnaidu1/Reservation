@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include  "Menu.html" %}
+{% load staticfiles %}
+<table  align="center" border="0">
+
+    <tr>
+    <td>
+    {% if bus == 'SR Nagar' %}
+        <img src="{% static '1.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:1234</span><br>
+        <span> Driver Cno:9052766763</span><br>
+        <span> PickUp Timing:7PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+        <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+
+        <tr>
+    <td>
+    {% elif bus == 'Amerpet' %}
+        <img src="{% static '1.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:2585</span><br>
+        <span> Driver Cno:9000073538</span><br>
+        <span> PickUp Timing:7:30PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr><tr>
+    <td>
+    {% elif bus == 'Panjagutta' %}
+        <img src="{% static '1.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:3725</span><br>
+        <span> Driver Cno:9618312109</span><br>
+        <span> PickUp Timing:7:45PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+        <tr>
+    <td>
+    {% elif bus == 'SanayathNagar' %}
+        <img src="{% static '2.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:7895</span><br>
+        <span> Driver Cno:9000756585</span><br>
+        <span> PickUp Timing:8:00PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+        <tr>
+    <td>
+    {% elif bus == 'MehadhiPatnam' %}
+        <img src="{% static '2.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:9225</span><br>
+        <span> Driver Cno:9703462328</span><br>
+        <span> PickUp Timing:8:15PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+        <tr>
+    <td>
+    {% elif bus == 'HytechCity' %}
+        <img src="{% static '2.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:5236</span><br>
+        <span> Driver Cno:8142169931</span><br>
+        <span> PickUp Timing:8:30PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+        <tr>
+    <td>
+    {% elif bus == 'Madhapur' %}
+        <img src="{% static '3.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:4695</span><br>
+        <span> Driver Cno:9000000236</span><br>
+        <span> PickUp Timing:9:00PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+        <tr>
+    <td>
+    {% elif bus == 'Jublihills' %}
+        <img src="{% static '3.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:2568</span><br>
+        <span> Driver Cno:9052369854</span><br>
+        <span> PickUp Timing:9:15PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+        <tr>
+    <td>
+    {% elif bus == 'Marthali' %}
+        <img src="{% static '3.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:4321</span><br>
+        <span> Driver Cno:9052766763</span><br>
+        <span> PickUp Timing:8:00PM</span><br>
+        <span> Droping Time:12:00AM</span><br>
+
+
+
+
+        </td>
+        </tr>
+            <tr>
+    <td>
+    {% elif bus == 'Tinfactory' %}
+        <img src="{% static '3.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:3214</span><br>
+        <span> Driver Cno:900073538</span><br>
+        <span> PickUp Timing:8:30PM</span><br>
+        <span> Droping Time:12:00AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+               <tr>
+    <td>
+    {% elif bus == 'BTM' %}
+        <img src="{% static '3.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:1236</span><br>
+        <span> Driver Cno:9052766763</span><br>
+        <span> PickUp Timing:9:00PM</span><br>
+        <span> Droping Time:12:00AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+               <tr>
+    <td>
+    {% elif bus == "a" %}
+        <img src="{% static '4.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:5698</span><br>
+        <span> Driver Cno:6256985622</span><br>
+        <span> PickUp Timing:9PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+               <tr>
+    <td>
+    {% elif bus == 'b' %}
+        <img src="{% static '4.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:6958</span><br>
+        <span> Driver Cno:9000756585</span><br>
+        <span> PickUp Timing:9:30PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+               <tr>
+    <td>
+    {% elif bus == 'c' %}
+        <img src="{% static '4.jpg'%}" width="200" height="200"><br>
+        <span> Reg.No:5698</span><br>
+        <span> Driver Cno:9052766763</span><br>
+        <span> PickUp Timing:10:00PM</span><br>
+        <span> Droping Time:9AM</span><br>
+
+
+         <form action="/upper/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Upper">
+        </form>
+        <form action="/lower/" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="Lower">
+        </form>
+
+
+        </td>
+        </tr>
+
+    {% endif %}
+
+
+</table>
+</body>
+</html>

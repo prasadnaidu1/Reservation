@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include "Menu.html" %}
+{% load staticfiles %}
+<table align="center" border="0">
+    <tr>
+        <td>
+<h3 align="center">
+<img src="{% static '1.jpg'%}" width="100" height="100">
+
+    <a href="/abhi/">AbhiTravels</a>&nbsp;&nbsp;</h3></td>
+        <td>
+            <h3 align="center">
+<img src="{% static '2.jpg'%}" width="100" height="100">
+
+    <a href="/prasad/">Prasad Travels</a>&nbsp;&nbsp;</h3></td>
+<td>
+<h3 align="center">
+    <img src="{% static '3.jpg'%}" width="100" height="100">
+
+    <a href="/babu/">Babu Travels</a>&nbsp;&nbsp;</h3></td>
+        <td>
+<h3 align="center">
+    <img src="{% static '4.jpg'%}" width="100" height="100">
+
+    <a href="/jagan/">Jagan Travels</a>&nbsp;&nbsp;</h3></td>
+    </tr>
+</table>
+
+</body>
+</html>

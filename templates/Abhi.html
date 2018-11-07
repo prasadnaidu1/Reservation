@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include "Menu.html" %}
+<form action="/searchabhi/" method="post">
+    {% csrf_token %}
+<table align="center" border="2">
+    <tr>
+        <th> Booking Details</th>
+    </tr>
+     <tr>
+        <td>
+            <select name="c1">
+                <option>--From--</option>
+                <option>Hyderabad</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Rayachoti</option>
+                <option>kadapa</option>
+                <option>Karnool</option>
+                <option>Vijayavada</option>
+            </select>
+
+        </td>
+    </tr>
+    <tr>
+
+    <tr>
+        <td>
+            <select name="c2">
+                <option>--To--</option>
+                <option>Hyderabad</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Rayachoti</option>
+                <option>kadapa</option>
+                <option>Karnool</option>
+                <option>Vijayavada</option>
+            </select>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>Selete Date of Journey:
+            <input type="date" min="2018-10-30" max="2018-11-30" placeholder="From date" required name="c3">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" placeholder="NO Of Seats" name="c4" required>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input type="submit" value="Search">
+        </td>
+    </tr>
+
+</table>
+    </form>
+
+<form action="/searchtown/" method="post">
+
+    {% csrf_token %}
+<h3 align="center">
+Pickup Point:
+<select name="b1">
+    {% for x in city %}
+    <option>{{ x }}</option>
+    {% endfor %}
+ </select>
+<input type="submit" value="show">
+</h3>
+</form>
+</body>
+</html>
